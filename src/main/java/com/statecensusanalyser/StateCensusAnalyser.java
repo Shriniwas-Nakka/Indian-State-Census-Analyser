@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 import java.util.Iterator;
 
 public class StateCensusAnalyser {
-    private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj//Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
+    private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
 
     public int csvReader() throws StateAnalyserException {
         int count=0;
