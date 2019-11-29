@@ -3,7 +3,7 @@ package com.statecensusanalyser;
 public class StateAnalyserException extends Exception {
     public enum ExceptionType {
         ENTERED_NULL, ENTERED_EMPTY, NO_SUCH_FIELD, NO_SUCH_METHOD, NO_SUCH_CLASS, NO_ACCESS,
-        OBJECT_CREATION_ISSUE, METHOD_INVOCATION_ISSUE, FIELD_SETTING_ISSUE, NO_SUCH_FILE
+        OBJECT_CREATION_ISSUE, METHOD_INVOCATION_ISSUE, FIELD_SETTING_ISSUE, NO_SUCH_FILE, INVALID_EXTENSION
     }
     public ExceptionType type;
 

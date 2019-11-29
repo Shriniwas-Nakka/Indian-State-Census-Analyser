@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2019-11-29T12:41:30" hostname="suraj-desktop" time="0.069">
+<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-29T13:17:06" hostname="suraj-desktop" time="0.003">
   <properties/>
-  <testcase name="givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" classname="com.statecensusnanalyser.CSVStateTest" time="0.063"/>
-  <testcase name="givenStateCSVFile_WhenInccorectReturn_ShouldReturnSad" classname="com.statecensusnanalyser.CSVStateTest" time="0.006"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenStateCSVFile1_whenImProper_ReturnCustomException" classname="com.statecensusnanalyser.CSVStateTest" time="0.003"/>
+  <system-out><![CDATA[Please enter proper extension
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
