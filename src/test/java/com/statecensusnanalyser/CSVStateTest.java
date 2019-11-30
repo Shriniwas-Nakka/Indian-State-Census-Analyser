@@ -72,4 +72,15 @@ public class CSVStateTest {
             e.printStackTrace();
         }
     }
+
+    @Test
+    public void givenStateCensusCSVFile_WhenIncorrectReturn_ShouldReturnSad() {
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        try {
+            Assert.assertEquals(29, stateCensusAnalyser.csvStateCensusReader());
+        } catch (StateAnalyserException e) {
+            System.out.println(e.getMessage());
+            Assert.assertEquals(StateAnalyserException.ExceptionType.NO_SUCH_FILE, e.type);
+        }
+    }
 }

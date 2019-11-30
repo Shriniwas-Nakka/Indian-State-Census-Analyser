@@ -12,7 +12,7 @@ import java.util.Iterator;
 
 public class StateCensusAnalyser {
     private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
-    private static final String SAMPLE_CSV_FILE_PATH1 = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
+    private static final String SAMPLE_CSV_FILE_PATH1 = "/home/suraja/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
     public int csvReader() throws StateAnalyserException {
 
         if (!SAMPLE_CSV_FILE_PATH.contains(".csv")) {
@@ -58,6 +58,8 @@ public class StateCensusAnalyser {
                 CSVStateCensus csvUser = csvUserIterator.next();
                 count++;
             }
+        } catch (NoSuchFileException e) {
+            throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE, "Enter proper file path", e);
         } catch (IOException e) {
             e.printStackTrace();
         }
