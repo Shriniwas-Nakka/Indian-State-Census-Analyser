@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-30T13:06:38" hostname="suraj-desktop" time="0.064">
+<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-30T13:09:35" hostname="suraj-desktop" time="0.064">
   <properties/>
-  <testcase name="givenStateCensusCSVFile_whenDelimiterIncorrect_ReturnCustomException" classname="com.statecensusnanalyser.CSVStateTest" time="0.064"/>
+  <testcase name="givenStateCensusCSVFile_whenHeaderIncorrect_ReturnCustomException" classname="com.statecensusnanalyser.CSVStateTest" time="0.064"/>
   <system-out><![CDATA[Enter proper File Type or Delimiter Incorrect or Header Incorrect
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
