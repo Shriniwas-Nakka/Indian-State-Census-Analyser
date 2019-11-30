@@ -49,4 +49,15 @@ public class CSVStateTest {
             Assert.assertEquals(StateAnalyserException.ExceptionType.INVALID_EXTENSION, e.type);
         }
     }
+
+    @Test
+    public void givenStateCSVFile_whenHeaderIncorrect_ReturnCustomException(){
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        try {
+            Assert.assertEquals(37, stateCensusAnalyser.csvReader());
+        } catch (StateAnalyserException e) {
+            System.out.println(e.getMessage());
+            Assert.assertEquals(StateAnalyserException.ExceptionType.SOME_OTHER_FILE_ERRORS, e.type);
+        }
+    }
 }
