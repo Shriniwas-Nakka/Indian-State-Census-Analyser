@@ -37,7 +37,7 @@ public class StateCensusAnalyser {
         } catch (NoSuchFileException e) {
             throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE, "Enter proper file path", e);
         } catch (RuntimeException e) {
-            throw new StateAnalyserException(StateAnalyserException.ExceptionType.INVALID_EXTENSION, "Enter proper file type", e);
+            throw new StateAnalyserException(StateAnalyserException.ExceptionType.INVALID_EXTENSION, "Enter proper file type or delimiter", e);
         } catch (IOException e) {
             e.printStackTrace();
         }

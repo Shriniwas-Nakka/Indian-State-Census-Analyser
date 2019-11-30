@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-30T05:27:43" hostname="suraj-desktop" time="0.065">
+<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-30T11:13:08" hostname="suraj-desktop" time="0.062">
   <properties/>
-  <testcase name="givenStateCSVFile1_whenImProper_ReturnCustomException" classname="com.statecensusnanalyser.CSVStateTest" time="0.065"/>
+  <testcase name="givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException" classname="com.statecensusnanalyser.CSVStateTest" time="0.062"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

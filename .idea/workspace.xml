@@ -12,7 +12,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/statecensusanalyser/StateCensusAnalyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/statecensusanalyser/StateCensusAnalyser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/statecensusnanalyser/CSVStateTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/statecensusnanalyser/CSVStateTest.class" afterDir="false" />
@@ -22,6 +21,8 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.statecensusnanalyser.CSVStateTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.statecensusnanalyser.CSVStateTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCode.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +44,9 @@
         <projects_view />
       </state>
     </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Indian State Census Analyser" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,27 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CSVStateTest.givenStateCSVFile1_whenImProper_ReturnCustomException">
-    <configuration name="CSVStateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.CSVStateTest.givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException">
     <configuration name="CSVStateTest.givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,12 +142,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CSVStates.givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CSVStateTest.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStates.givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CSVStateTest.givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest.givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -180,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CSVStateTest.givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException" />
         <item itemvalue="Gradle.CSVStateTest.givenStateCSVFile1_whenImProper_ReturnCustomException" />
-        <item itemvalue="Gradle.CSVStateTest" />
-        <item itemvalue="Gradle.CSVStateTest.givenStateCSVFile_WhenInccorectReturn_ShouldReturnSad" />
+        <item itemvalue="Gradle.CSVStateTest.givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad" />
         <item itemvalue="Gradle.CSVStateTest.givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" />
-        <item itemvalue="Gradle.CSVStates.givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" />
+        <item itemvalue="Gradle.CSVStateTest.givenStateCSVFile_WhenInccorectReturn_ShouldReturnSad" />
       </list>
     </recent_temporary>
   </component>

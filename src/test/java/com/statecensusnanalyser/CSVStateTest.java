@@ -18,7 +18,7 @@ public class CSVStateTest {
     }
 
     @Test
-    public void givenStateCSVFile_WhenInccorectReturn_ShouldReturnSad() {
+    public void givenStateCSVFile_WhenIncorrectReturn_ShouldReturnSad() {
         StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
         try {
             Assert.assertEquals(37, stateCensusAnalyser.csvReader());
@@ -30,6 +30,17 @@ public class CSVStateTest {
 
     @Test
     public void givenStateCSVFile1_whenImProper_ReturnCustomException(){
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        try {
+            Assert.assertEquals(37, stateCensusAnalyser.csvReader());
+        } catch (StateAnalyserException e) {
+            System.out.println(e.getMessage());
+            Assert.assertEquals(StateAnalyserException.ExceptionType.INVALID_EXTENSION, e.type);
+        }
+    }
+
+    @Test
+    public void givenStateCSVFile_whenDelimiterIncorrect_ReturnCustomException(){
         StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
         try {
             Assert.assertEquals(37, stateCensusAnalyser.csvReader());
