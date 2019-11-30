@@ -7,6 +7,7 @@ import org.junit.Test;
 
 public class CSVStateTest {
 
+    // UC1 Ability for the analyser to load the Indian States Information from a csv file
     @Test
     public void givenNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy() {
         StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
@@ -58,6 +59,17 @@ public class CSVStateTest {
         } catch (StateAnalyserException e) {
             System.out.println(e.getMessage());
             Assert.assertEquals(StateAnalyserException.ExceptionType.SOME_OTHER_FILE_ERRORS, e.type);
+        }
+    }
+
+    // UC2 Ability for the analyser to load the Indian States Census Information from a csv
+    @Test
+    public void givenStateCSVfileNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy() {
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        try {
+            Assert.assertEquals(29, stateCensusAnalyser.csvStateCensusReader());
+        } catch (StateAnalyserException e) {
+            e.printStackTrace();
         }
     }
 }
