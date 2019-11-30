@@ -12,12 +12,8 @@ import java.util.Iterator;
 
 public class StateCensusAnalyser {
     private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
-    private static final String SAMPLE_CSV_FILE_PATH1 = "/home/suraja/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
+    private static final String SAMPLE_CSV_FILE_PATH1 = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.txt";
     public int csvReader() throws StateAnalyserException {
-
-        if (!SAMPLE_CSV_FILE_PATH.contains(".csv")) {
-            throw new StateAnalyserException(StateAnalyserException.ExceptionType.INVALID_EXTENSION, "Please enter proper extension");
-        }
 
         int count = 0;
         try {
@@ -59,7 +55,9 @@ public class StateCensusAnalyser {
                 count++;
             }
         } catch (NoSuchFileException e) {
-            throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE, "Enter proper file path", e);
+            throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE, "Enter proper file path or file type", e);
+        } catch (RuntimeException e) {
+            throw new StateAnalyserException(StateAnalyserException.ExceptionType.SOME_OTHER_FILE_ERRORS, "Enter proper File Type or Delimiter Incorrect or Header Incorrect", e);
         } catch (IOException e) {
             e.printStackTrace();
         }
