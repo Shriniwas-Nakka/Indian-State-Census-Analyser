@@ -4,16 +4,16 @@ import com.opencsv.bean.CsvBindByName;
 
 public class CSVStates {
 
-    @CsvBindByName
+    @CsvBindByName(column = "SrNo")
     private int serialNumber;
 
-    @CsvBindByName
+    @CsvBindByName(column = "StateName")
     private String stateName;
 
-    @CsvBindByName
+    @CsvBindByName(column = "TIN")
     private String tin;
 
-    @CsvBindByName
+    @CsvBindByName(column = "StateCode")
     private int StateCode;
 
     public int getSerialNumber() {
