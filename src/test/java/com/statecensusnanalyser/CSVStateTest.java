@@ -10,6 +10,7 @@ import java.io.IOException;
 public class CSVStateTest {
 
     private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
+    private static final String SAMPLE_JSON_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/State.json";
 
 
     // UC1 Ability for the analyser to load the Indian States Census Information from a csv
@@ -71,7 +72,14 @@ public class CSVStateTest {
     public void givenStateCensusCSVFile_whenProper_SortStateAlphabeticalOrderAndWriteToJSONFile() throws StateAnalyserException {
         StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
         Assert.assertEquals(29, stateCensusAnalyser.csvReader(SAMPLE_CSV_FILE_PATH));
-        Assert.assertTrue( stateCensusAnalyser.sortStateRecords("/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/State.json"));
+        Assert.assertTrue( stateCensusAnalyser.sortStateRecords(SAMPLE_JSON_FILE_PATH));
+    }
+
+    @Test
+    public void givenStateCensusCSVFile_whenProper_SortStatePopulationAndWriteToJSONFile() throws StateAnalyserException {
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        Assert.assertEquals(29, stateCensusAnalyser.csvReader(SAMPLE_CSV_FILE_PATH));
+        Assert.assertTrue( stateCensusAnalyser.sortStateRecords(SAMPLE_JSON_FILE_PATH));
     }
 }
 
