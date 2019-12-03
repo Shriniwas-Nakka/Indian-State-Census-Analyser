@@ -41,6 +41,7 @@ public class StateCensusAnalyser {
     public Boolean sortStateRecords(String FilePath) throws StateAnalyserException {
         sortThisListBasedOnStateName(CsvCensusDataList);
         sortThisListBasedOnPopulation(CsvCensusDataList);
+        sortThisListBasedOnStateDensity(CsvCensusDataList);
         try {
             Gson gson = new Gson();
             String json = gson.toJson(CsvCensusDataList);
@@ -62,8 +63,11 @@ public class StateCensusAnalyser {
     private static void sortThisListBasedOnPopulation(List<CSVStateCensus> censusList) {
         Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getPopulation()) - Integer.parseInt(s1.getPopulation());
         censusList.sort(c);
-//        Comparator<CSVStateCensus> c = (s1, s2) -> s1.getPopulation().compareTo(s2.getPopulation());
-//        censusList.sort(c);
+    }
+
+    private static void sortThisListBasedOnStateDensity(List<CSVStateCensus> censusList) {
+        Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getDestinyPerSqKm()) - Integer.parseInt(s1.getDestinyPerSqKm());
+        censusList.sort(c);
     }
 }
 

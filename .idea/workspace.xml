@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d09bd0b8-0499-4fee-a415-d96bbcf6b6e4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.CSVStateTest.givenStateCSVfileNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy">
+  <component name="RunManager" selected="Gradle.CSVStateTest.givenStateCensusCSVFile_whenProper_SortStateDensityAndWriteToJSONFile">
     <configuration name="CSVStateTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -94,26 +93,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest.givenStateCSVfileNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CSVStateTest.givenStateCensusCSVFile_whenHeaderIncorrect_ReturnCustomException" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest.givenStateCensusCSVFile_whenHeaderIncorrect_ReturnCustomException&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -168,13 +147,33 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="CSVStateTest.givenStateCensusCSVFile_whenProper_SortStateDensityAndWriteToJSONFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.statecensusnanalyser.CSVStateTest.givenStateCensusCSVFile_whenProper_SortStateDensityAndWriteToJSONFile&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CSVStateTest.givenStateCensusCSVFile_whenProper_SortStateDensityAndWriteToJSONFile" />
         <item itemvalue="Gradle.CSVStateTest.givenStateCSVfileNumberOfRecord_WhenRecordsMatches_ShouldReturnHappy" />
         <item itemvalue="Gradle.CSVStateTest.givenStateCensusCSVFile_whenProper_SortAlphabeticalOrderAndWriteToJSONFile" />
         <item itemvalue="Gradle.CSVStateTest" />
         <item itemvalue="Gradle.CSVStateTest.givenStateCensusCSVFile_whenProper_SortAlphabaticalOrderAndWriteToJSONFile" />
-        <item itemvalue="Gradle.CSVStateTest.givenStateCensusCSVFile_whenHeaderIncorrect_ReturnCustomException" />
       </list>
     </recent_temporary>
   </component>
