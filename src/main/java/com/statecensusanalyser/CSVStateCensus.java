@@ -4,7 +4,7 @@ import com.opencsv.bean.CsvBindByName;
 
 public class CSVStateCensus {
     @CsvBindByName(column = "State")
-    private int StateName;
+    private String State;
 
     @CsvBindByName(column = "Population")
     private String Population;
@@ -13,5 +13,40 @@ public class CSVStateCensus {
     private String AreaInSQKm;
 
     @CsvBindByName(column = "DensityPerSqKm")
-    private int DestinyPerSqKm;
+    private String DestinyPerSqKm;
+
+    public String getState() {
+        return State;
+    }
+
+    public String getPopulation() {
+        return Population;
+    }
+
+    public String getAreaInSQKm() {
+        return AreaInSQKm;
+    }
+
+    public String getDestinyPerSqKm() {
+        return DestinyPerSqKm;
+    }
+
+
+    public void setState(String state) {
+        State = state;
+    }
+
+    public void setPopulation(String population) {
+        Population = population;
+    }
+
+    public void setAreaInSQKm(String areaInSQKm) {
+        AreaInSQKm = areaInSQKm;
+    }
+
+    public void setDestinyPerSqKm(String destinyPerSqKm) {
+        DestinyPerSqKm = destinyPerSqKm;
+    }
+
+
 }
