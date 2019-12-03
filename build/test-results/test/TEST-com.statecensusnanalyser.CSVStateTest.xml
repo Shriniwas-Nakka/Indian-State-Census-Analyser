@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-03T13:38:16" hostname="suraj-desktop" time="0.089">
+<testsuite name="com.statecensusnanalyser.CSVStateTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-03T13:44:54" hostname="suraj-desktop" time="0.101">
   <properties/>
-  <testcase name="givenStateCensusCSVFile_whenProper_SortStateDensityAndWriteToJSONFile" classname="com.statecensusnanalyser.CSVStateTest" time="0.089"/>
+  <testcase name="givenStateCensusCSVFile_whenProper_SortLargestStateByAreaAndWriteToJSONFile" classname="com.statecensusnanalyser.CSVStateTest" time="0.101"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

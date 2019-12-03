@@ -88,6 +88,13 @@ public class CSVStateTest {
         Assert.assertEquals(29, stateCensusAnalyser.csvReader(SAMPLE_CSV_FILE_PATH));
         Assert.assertTrue( stateCensusAnalyser.sortStateRecords(SAMPLE_JSON_FILE_PATH));
     }
+
+    @Test
+    public void givenStateCensusCSVFile_whenProper_SortLargestStateByAreaAndWriteToJSONFile() throws StateAnalyserException {
+        StateCensusAnalyser stateCensusAnalyser = new StateCensusAnalyser();
+        Assert.assertEquals(29, stateCensusAnalyser.csvReader(SAMPLE_CSV_FILE_PATH));
+        Assert.assertTrue( stateCensusAnalyser.sortStateRecords(SAMPLE_JSON_FILE_PATH));
+    }
 }
 
 

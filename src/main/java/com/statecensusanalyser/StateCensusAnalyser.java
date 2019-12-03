@@ -6,7 +6,6 @@ import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.*;
 import java.nio.file.Files;
-import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.*;
 
@@ -42,6 +41,7 @@ public class StateCensusAnalyser {
         sortThisListBasedOnStateName(CsvCensusDataList);
         sortThisListBasedOnPopulation(CsvCensusDataList);
         sortThisListBasedOnStateDensity(CsvCensusDataList);
+        sortThisListBasedOnLargestStateArea(CsvCensusDataList);
         try {
             Gson gson = new Gson();
             String json = gson.toJson(CsvCensusDataList);
@@ -67,6 +67,11 @@ public class StateCensusAnalyser {
 
     private static void sortThisListBasedOnStateDensity(List<CSVStateCensus> censusList) {
         Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getDestinyPerSqKm()) - Integer.parseInt(s1.getDestinyPerSqKm());
+        censusList.sort(c);
+    }
+
+    private static void sortThisListBasedOnLargestStateArea(List<CSVStateCensus> censusList) {
+        Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getAreaInSQKm()) - Integer.parseInt(s1.getAreaInSQKm());
         censusList.sort(c);
     }
 }
