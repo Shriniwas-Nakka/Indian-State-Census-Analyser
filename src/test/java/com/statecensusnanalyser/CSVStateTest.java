@@ -7,8 +7,8 @@ import org.junit.Test;
 
 public class CSVStateTest {
 
-    private static final String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
-    private static final String SAMPLE_CSV_FILE_PATH1 = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
+    String SAMPLE_CSV_FILE_PATH = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCode.csv";
+    String SAMPLE_CSV_FILE_PATH1 = "/home/suraj/IdeaProjects/Indian State Census Analyser/src/main/java/com/statecensusanalyser/StateCensusData.csv";
 
     // UC1 Ability for the analyser to load the Indian States Information from a csv file
     @Test

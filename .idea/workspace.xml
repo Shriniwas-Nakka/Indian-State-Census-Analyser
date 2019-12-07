@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d09bd0b8-0499-4fee-a415-d96bbcf6b6e4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/statecensusanalyser/StateCensusAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/statecensusnanalyser/CSVStateTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
