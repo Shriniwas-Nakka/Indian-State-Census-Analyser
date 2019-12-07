@@ -37,11 +37,7 @@ public class StateCensusAnalyser {
         return stateCount;
     }
 
-    public Boolean sortStateRecords(String FilePath) throws StateAnalyserException {
-        sortThisListBasedOnStateName(CsvCensusDataList);
-        sortThisListBasedOnPopulation(CsvCensusDataList);
-        sortThisListBasedOnStateDensity(CsvCensusDataList);
-        sortThisListBasedOnLargestStateArea(CsvCensusDataList);
+    public Boolean writeRecords(String FilePath) throws StateAnalyserException {
         try {
             Gson gson = new Gson();
             String json = gson.toJson(CsvCensusDataList);
@@ -51,28 +47,39 @@ public class StateCensusAnalyser {
             return true;
         } catch (IOException e) {
             throw new StateAnalyserException(StateAnalyserException.ExceptionType.NO_SUCH_FILE, "File Not Found");
-
         }
     }
 
-    private static void sortThisListBasedOnStateName(List<CSVStateCensus> censusList) {
+    public int sortThisListBasedOnStateName(String filePath, String jsonFile) throws StateAnalyserException {
+        int count = csvReader(filePath);
         Comparator<CSVStateCensus> c = (s1, s2) -> s1.getState().compareTo(s2.getState());
-        censusList.sort(c);
+        CsvCensusDataList.sort(c);
+        writeRecords(jsonFile);
+        return count;
     }
 
-    private static void sortThisListBasedOnPopulation(List<CSVStateCensus> censusList) {
+    public int sortThisListBasedOnPopulation(String filePath, String jsonFile) throws StateAnalyserException {
+        int count = csvReader(filePath);
         Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getPopulation()) - Integer.parseInt(s1.getPopulation());
-        censusList.sort(c);
+        CsvCensusDataList.sort(c);
+        writeRecords(jsonFile);
+        return count;
     }
 
-    private static void sortThisListBasedOnStateDensity(List<CSVStateCensus> censusList) {
+    public int sortThisListBasedOnStateDensity(String filePath, String jsonFile) throws StateAnalyserException {
+        int count = csvReader(filePath);
         Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getDestinyPerSqKm()) - Integer.parseInt(s1.getDestinyPerSqKm());
-        censusList.sort(c);
+        CsvCensusDataList.sort(c);
+        writeRecords(jsonFile);
+        return count;
     }
 
-    private static void sortThisListBasedOnLargestStateArea(List<CSVStateCensus> censusList) {
+    public int sortThisListBasedOnLargestStateArea(String filePath, String jsonFile) throws StateAnalyserException {
+        int count = csvReader(filePath);
         Comparator<CSVStateCensus> c = (s1, s2) -> Integer.parseInt(s2.getAreaInSQKm()) - Integer.parseInt(s1.getAreaInSQKm());
-        censusList.sort(c);
+        CsvCensusDataList.sort(c);
+        writeRecords(jsonFile);
+        return count;
     }
 }
 
